@@ -1,0 +1,95 @@
+/*Modify the main colors*/
+:root {
+    --button-bgcolor: rgba(0, 0, 0, 0.33000001311302185) !important;
+    --button-hover-bgcolor: rgba(207, 207, 207, 0.2) !important;
+    --button-active-bgcolor: rgba(207, 207, 207, 0.4000000059604645) !important;
+    --button-primary-bgcolor: rgb(207, 207, 207) !important;
+    --button-primary-hover-bgcolor: rgb(225, 225, 225) !important;
+    --button-primary-active-bgcolor: rgb(242, 242, 242) !important;
+    --button-primary-color: rgb(43, 43, 43) !important;
+
+    --input-bgcolor: rgb(65, 65, 65) !important;
+    --input-color: rgb(251, 251, 251) !important;
+    --urlbarView-separator-color: rgb(82, 82, 82) !important;
+    --tab-icon-overlay-stroke: rgb(66, 66, 66) !important;
+    --tab-icon-overlay-fill: rgb(251, 251, 251) !important;
+    --arrowpanel-dimmed-further: color-mix(in srgb, currentColor 14%, transparent) !important;
+    --urlbar-icon-fill-opacity: 1 !important;
+    --panel-separator-zap-gradient: linear-gradient(90deg, #9059FF 0%, #FF4AA2 52.08%, #FFBD4F 100%) !important;
+    --lwt-accent-color: rgb(28, 28, 28) !important;
+    --lwt-text-color: rgba(251, 251, 251) !important;
+    --arrowpanel-background: rgb(66, 66, 66) !important;
+    --arrowpanel-color: rgb(251, 251, 251) !important;
+    --arrowpanel-border-color: rgb(82, 82, 82) !important;
+    --toolbar-field-background-color: rgb(28, 28, 28) !important;
+    --toolbar-bgcolor: rgb(42, 42, 42) !important;
+    --toolbar-color: rgb(251, 251, 251) !important;
+    --toolbar-field-color: rgb(251, 251, 251) !important;
+    --toolbar-field-border-color: rgba(0, 0, 0, 0) !important;
+    --toolbar-field-focus-background-color: rgba(66, 66, 66, 1) !important;
+    --toolbar-field-focus-color: rgb(251, 251, 251) !important;
+    --newtab-background-color: rgb(43, 43, 43) !important;
+    --newtab-background-color-secondary: rgb(66, 66, 66) !important;
+    --newtab-text-primary-color: rgb(251, 251, 251) !important;
+    --lwt-accent-color-inactive: rgb(31, 31, 31) !important;
+    --tab-selected-bgcolor: rgb(66, 66, 66) !important;
+    --tab-selected-textcolor: rgb(251, 251, 251) !important;
+    --lwt-tab-line-color: rgba(0, 0, 0, 0) !important;
+    --tabs-navbar-separator-color: rgba(0, 0, 0, 0) !important;
+    --tabs-navbar-separator-style: none  !important;
+    --chrome-content-separator-color: rgb(12, 12, 12) !important;
+    --toolbarbutton-icon-fill: rgb(251, 251, 251) !important;
+    --urlbarView-highlight-background: rgb(43, 43, 43) !important;
+    --sidebar-background-color: rgb(28, 28, 28) !important;
+    --sidebar-text-color: rgb(249, 249, 249) !important;
+    --sidebar-border-color: rgba(255, 255, 255, 0.10000000149011612) !important;
+
+}
+
+
+
+/* Bookmarks Toolbar folders */
+#PersonalToolbar menupopup,
+/* Right-click context menus */
+#mainPopupSet menupopup,
+/* Top menu bar on Windows (not sure about others) */
+#toolbar-menubar menupopup,
+/* Sidebar/Library bookmark/history context menus */
+#placesContext,
+/* Address bar context menu (2021-10-25) */
+#urlbar-input-container menupopup,
+/* Various toolbar drop-down panels (Fx96) */
+#back-button menupopup, #forward-button menupopup,
+#identity-popup, #appMenu-popup, #downloadsPanel, #BMB_bookmarksPopup {
+    /* Text color */
+    --menu-color: #fff !important;
+    --arrowpanel-color: #000 !important;
+    --panel-color: #fff !important;
+    /* Background color */
+    --menu-background-color:  #202020 !important;
+    --arrowpanel-background: #202020 !important;
+    --panel-background: #202020 !important;
+    /* Border color (if any) */
+    --menu-border-color: threedshadow !important;
+    --arrowpanel-border-color: threedshadow !important;
+    --panel-border-color: threedshadow !important;
+    /* Hovered/expanded item background color */
+    --menuitem-hover-background-color: #e0e0e6 !important;
+    --button-hover-bgcolor: #e0e0e6 !important;
+    /* Disabled items text color and hovered background */
+    --menu-disabled-color: rgba(21, 20, 26, 0.4) !important;
+    --menuitem-disabled-hover-background-color: rgba(224, 224, 230, 0.4) !important;
+}
+
+/* Email Image... */
+#context-sendimage, 
+
+/* Set Image as Desktop Background... (and preceding separator) */
+#context-sep-setbackground, #context-setDesktopBackground,
+
+/* Inspect Accessibility Properties */
+#context-inspect-a11y
+{
+    display: none !important;
+}
+
