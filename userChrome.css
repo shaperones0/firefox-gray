@@ -77,8 +77,38 @@
     --menuitem-hover-background-color: #e0e0e6 !important;
     --button-hover-bgcolor: #e0e0e6 !important;
     /* Disabled items text color and hovered background */
-    --menu-disabled-color: rgba(21, 20, 26, 0.4) !important;
-    --menuitem-disabled-hover-background-color: rgba(224, 224, 230, 0.4) !important;
+    --menu-disabled-color: rgba(21, 21, 21, 0.4) !important;
+    --menuitem-disabled-hover-background-color: rgba(224, 224, 224, 0.4) !important;
+}
+
+/* all the context menu colors */
+:root, body, * {
+    --uc-background-color: #202020 !important;
+    --uc-border-color: threedshadow !important;
+    --uc-text-color: #fff !important;
+    --uc-border-radius: 10px !important;
+    --uc-selected: rgba(255,255,255,0.1) !important;
+    --uc-hover: rgba(255,255,255,0.1) !important;
+}
+
+menupopup, panel {
+    color-scheme: light dark;
+    --panel-background: var(--uc-background-color) !important;
+    --panel-color: var(--uc-text-color) !important;
+    /* --panel-border-radius: var(--uc-border-radius) !important; */
+    --panel-border-color: var(--uc-border-color) !important;
+    --panel-shadow: 0 0 var(---uc-border-color) hsla(0,0%,0%,.2); 
+}
+
+menuitem:hover{
+    background-color: var(--uc-hover) !important;
+    color: var(--uc-text-color) !important;
+}
+
+menu:where([_moz-menuactive="true"]:not([disabled="true"])),
+menuitem:where([_moz-menuactive="true"]:not([disabled="true"])){
+    background-color: var(--uc-selected) !important;
+    color: var(--uc-text-color) !important;
 }
 
 /* Email Image... */
@@ -93,3 +123,4 @@
     display: none !important;
 }
 
+browser { background-color: #1f1f1f !important; }
