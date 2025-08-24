@@ -46,7 +46,10 @@
 
 }
 
-
+/* Override search switcher color */
+#urlbar-searchmode-switcher {
+	background-color: #303030 !important;
+}
 
 /* Bookmarks Toolbar folders */
 #PersonalToolbar menupopup,
@@ -64,7 +67,7 @@
     /* Text color */
     --menu-color: #fff !important;
     --arrowpanel-color: #000 !important;
-    --panel-color: #fff !important;
+    --panel-color: #ddd !important;
     /* Background color */
     --menu-background-color:  #202020 !important;
     --arrowpanel-background: #202020 !important;
@@ -85,7 +88,7 @@
 :root, body, * {
     --uc-background-color: #202020 !important;
     --uc-border-color: threedshadow !important;
-    --uc-text-color: #fff !important;
+    --uc-text-color: #eee !important;
     --uc-border-radius: 10px !important;
     --uc-selected: rgba(255,255,255,0.1) !important;
     --uc-hover: rgba(255,255,255,0.1) !important;
@@ -95,9 +98,9 @@ menupopup, panel {
     color-scheme: light dark;
     --panel-background: var(--uc-background-color) !important;
     --panel-color: var(--uc-text-color) !important;
-    /* --panel-border-radius: var(--uc-border-radius) !important; */
     --panel-border-color: var(--uc-border-color) !important;
     --panel-shadow: 0 0 var(---uc-border-color) hsla(0,0%,0%,.2); 
+	background-color: #202020 !important;
 }
 
 menuitem:hover{
